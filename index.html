@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scream Therapy - Transform Your Stress Into Relief</title>
-
-    <!-- Add Open Graph -->
-    <meta property="og:title" content="Scream Therapy - Try it now and turn your stress into satisfaction" />
-    <meta property="og:description" content="Discover the benefits of scream therapy and improve your mental health." />
-    <meta property="og:image" content="https://screamtherapy.pro/images/preview.png" />
-    <meta property="og:url" content="https://screamtherapy.pro/" />
-    <meta property="og:type" content="website" />
     
     <!-- Add Favicon -->
     <link rel="icon" type="image/png" href="./images/favicon.png">
@@ -261,25 +254,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 40px;
             margin-top: 60px;
             flex-wrap: wrap;
             padding: 0 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .screenshot-img {
-            max-width: 300px;
+            max-width: 280px;
             border-radius: 30px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
             transition: all 0.3s ease;
         }
 
         .screenshot-img:nth-child(1) {
-            transform: rotate(-5deg);
+            transform: rotate(-5deg) translateY(20px);
         }
 
         .screenshot-img:nth-child(2) {
-            transform: rotate(5deg);
+            transform: translateY(-20px);
+        }
+
+        .screenshot-img:nth-child(3) {
+            transform: rotate(5deg) translateY(20px);
         }
 
         .screenshot-img:hover {
@@ -355,12 +354,13 @@
             }
             
             .screenshot-img {
-                max-width: 280px;
+                max-width: 260px;
             }
             
             .screenshot-img:nth-child(1),
-            .screenshot-img:nth-child(2) {
-                transform: rotate(0);
+            .screenshot-img:nth-child(2),
+            .screenshot-img:nth-child(3) {
+                transform: rotate(0) translateY(0);
             }
         }
 
@@ -439,6 +439,7 @@
             <div class="screenshot-container">
                 <img src="./images/mockup1.png" alt="Scream Therapy App Mockup 1" class="screenshot-img">
                 <img src="./images/mockup2.png" alt="Scream Therapy App Mockup 2" class="screenshot-img">
+                <img src="./images/mockup3.png" alt="Scream Therapy App Mockup 3" class="screenshot-img">
             </div>
         </div>
     </section>
